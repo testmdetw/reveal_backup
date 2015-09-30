@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>
+    Pelican Introduction
+    </title>
+    <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">	
+        <!--增加對於 IE 早期版本的支援 -->
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Pelican Introduction</h1>
+
+            選擇 .md 檔案名稱
+
+            選擇 slug 存檔名稱
+
+            選擇網誌文章標題, 日期作者與簡介內容等
+
+            開始寫 markdown 格式的網誌內容
+                
+            </section>
+            	
+            <section data-markdown>
+                <script type="text/template">
+                    ## 高階程式語言
+                    - ### Engineering is a profession                     <!-- .element: class="fragment" -->
+                    - ### Engineers apply scientific effects to produce products and services that people want                     <!-- .element: class="fragment" -->
+                    - ### Engineers invent new ways to do useful things                     <!-- .element: class="fragment" -->
+                    - ### Scientists strive to understand nature                     <!-- .element: class="fragment" -->
+                </script>
+            </section>
+
+
+            						
+        </div>
+    </div>
+    
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true }
+            ]
+        });
+    </script>
+    </body>
+</html>
+
